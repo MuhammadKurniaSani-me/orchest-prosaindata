@@ -1,0 +1,254 @@
+{
+    "name": "Main",
+    "parameters": {},
+    "services": {},
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB",
+        "max_steps_parallelism": 0
+    },
+    "steps": {
+        "0f51e199-6fa4-42f1-ac21-7418b4d784bf": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "get-data-from-elephant-sql.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    102,
+                    327.5
+                ]
+            },
+            "outgoing_connections": [
+                "2852f425-563b-4194-b924-eff9964d4871"
+            ],
+            "parameters": {},
+            "title": "Get data from Elephants SQL",
+            "uuid": "0f51e199-6fa4-42f1-ac21-7418b4d784bf"
+        },
+        "2852f425-563b-4194-b924-eff9964d4871": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "create-dataframe.ipynb",
+            "incoming_connections": [
+                "5f1c5fe5-bf32-4f11-a1db-cd506c639b00",
+                "0f51e199-6fa4-42f1-ac21-7418b4d784bf",
+                "d1318529-dc33-4882-830e-086f308bb004"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    401,
+                    200.5
+                ]
+            },
+            "outgoing_connections": [
+                "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+            ],
+            "parameters": {},
+            "title": "Append Columns",
+            "uuid": "2852f425-563b-4194-b924-eff9964d4871"
+        },
+        "2e6587cc-c9ab-4aab-9175-1f198b0114b7": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "linear-regression.ipynb",
+            "incoming_connections": [
+                "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    965,
+                    244.5
+                ]
+            },
+            "outgoing_connections": [
+                "ea77a33d-4337-40cc-b507-66e5c3421115"
+            ],
+            "parameters": {},
+            "title": "Linear Regression Model",
+            "uuid": "2e6587cc-c9ab-4aab-9175-1f198b0114b7"
+        },
+        "5f1c5fe5-bf32-4f11-a1db-cd506c639b00": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "get-data-csv.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    108,
+                    199.5
+                ]
+            },
+            "outgoing_connections": [
+                "2852f425-563b-4194-b924-eff9964d4871"
+            ],
+            "parameters": {},
+            "title": "Get CSV Data",
+            "uuid": "5f1c5fe5-bf32-4f11-a1db-cd506c639b00"
+        },
+        "675a09ce-13ee-4e76-bb23-c4016e79e534": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "svm.ipynb",
+            "incoming_connections": [
+                "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    961,
+                    391.5
+                ]
+            },
+            "outgoing_connections": [
+                "ea77a33d-4337-40cc-b507-66e5c3421115"
+            ],
+            "parameters": {},
+            "title": "SVM Model",
+            "uuid": "675a09ce-13ee-4e76-bb23-c4016e79e534"
+        },
+        "a2403c5c-1404-45b2-aec4-39ab0344f9b2": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "PCA.ipynb",
+            "incoming_connections": [
+                "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    970,
+                    110.5
+                ]
+            },
+            "outgoing_connections": [
+                "ea77a33d-4337-40cc-b507-66e5c3421115"
+            ],
+            "parameters": {},
+            "title": "PCA Model",
+            "uuid": "a2403c5c-1404-45b2-aec4-39ab0344f9b2"
+        },
+        "d1318529-dc33-4882-830e-086f308bb004": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "get-local-mysql-data.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    107,
+                    76.5
+                ]
+            },
+            "outgoing_connections": [
+                "2852f425-563b-4194-b924-eff9964d4871"
+            ],
+            "parameters": {},
+            "title": "Get Local MySQL Data",
+            "uuid": "d1318529-dc33-4882-830e-086f308bb004"
+        },
+        "dd0ad53b-f38c-47f4-ab2f-be29310f0800": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "preprocessing.ipynb",
+            "incoming_connections": [
+                "2852f425-563b-4194-b924-eff9964d4871"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    670,
+                    200.5
+                ]
+            },
+            "outgoing_connections": [
+                "2e6587cc-c9ab-4aab-9175-1f198b0114b7",
+                "675a09ce-13ee-4e76-bb23-c4016e79e534",
+                "a2403c5c-1404-45b2-aec4-39ab0344f9b2",
+                "f05659b8-2b0f-4cfe-8150-4e328b5ed677"
+            ],
+            "parameters": {},
+            "title": "Preprocessing",
+            "uuid": "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+        },
+        "ea77a33d-4337-40cc-b507-66e5c3421115": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "collect-result.ipynb",
+            "incoming_connections": [
+                "675a09ce-13ee-4e76-bb23-c4016e79e534",
+                "2e6587cc-c9ab-4aab-9175-1f198b0114b7",
+                "a2403c5c-1404-45b2-aec4-39ab0344f9b2",
+                "f05659b8-2b0f-4cfe-8150-4e328b5ed677"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    1277,
+                    172.5
+                ]
+            },
+            "outgoing_connections": [],
+            "parameters": {},
+            "title": "Collect Result",
+            "uuid": "ea77a33d-4337-40cc-b507-66e5c3421115"
+        },
+        "f05659b8-2b0f-4cfe-8150-4e328b5ed677": {
+            "environment": "6d002f97-eead-41d4-8c05-ee2d71eff798",
+            "file_path": "decision-tree.ipynb",
+            "incoming_connections": [
+                "dd0ad53b-f38c-47f4-ab2f-be29310f0800"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    969,
+                    -16.5
+                ]
+            },
+            "outgoing_connections": [
+                "ea77a33d-4337-40cc-b507-66e5c3421115"
+            ],
+            "parameters": {},
+            "title": "Decision Tree Model",
+            "uuid": "f05659b8-2b0f-4cfe-8150-4e328b5ed677"
+        }
+    },
+    "uuid": "cc7ab9a1-a9bb-46df-ad91-21444cefc728",
+    "version": "1.2.3"
+}
